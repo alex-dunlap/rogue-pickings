@@ -1,0 +1,189 @@
+/* comments are kept for clarity of changes needed outside of project code */
+
+
+/******** GLOBAL STYLES ********/
+
+
+/* * {
+    border: 3px dotted red;
+} */
+
+body {
+    /* background: cornflowerblue; */
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 12px;
+}
+
+p {
+    line-height: 36px;
+    /* margin: 0px auto; */
+}
+
+.content-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+
+/******** HEADER STYLES ********/
+
+header h1 {
+    width: 300px;
+    float: left;
+    margin: 0;
+    padding: 36px 0;
+}
+
+header h1 span {
+    color: #45610E;
+}
+
+header nav {
+    width: 300px;
+    float: right;
+    padding: 44px 0;
+}
+
+header nav ul {
+    margin: 0;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #45610E;
+}
+
+
+/********  MAIN STYLES ********/
+
+
+/******** TOP SECTION ********/
+
+.main-image img {
+    border-top: 3px solid #77A466;
+    border-bottom: 3px solid #77A466;
+}
+
+.main-title h2 {
+    color: #45610E;
+    padding: 25px 0;
+    margin: 0px;
+}
+
+
+/******** BOTTOM SECTION ********/
+
+.bottom-section .content-wrapper {
+    border-top: 5px solid #eee;
+    border-bottom: 5px solid #eee;
+}
+
+.section-one,
+.section-two,
+.section-three {
+    box-sizing: border-box;
+    float: left;
+    padding: 0 40px;
+}
+
+.section-one {
+    width: 350px;
+    /* needed to zero out padding to get text to match the static length */
+    padding-right: 0px;
+}
+
+.section-two {
+    width: 500px;
+    border-right: 5px solid #eee;
+    border-left: 5px solid #eee;
+}
+
+.section-three {
+    width: 350px;
+}
+
+.bottom-section h3 {
+    padding: 30px 0;
+}
+
+
+/* .section-one ul li {
+    padding-left: 0;
+} */
+
+.menu-list {
+    /* code did not work so moved directly to .menu-list li, also, either I missed the part to add this class, 
+    or I had to add it manually */
+    /* padding-left: 0;
+    list-style: none; */
+    /* margin: 0; */
+}
+
+
+/* not responding to changes.... need to troubleshoot
+
+-need to edit to design comp. still a little off on the list
+
+-SOLUTION: !!!!needed to add the content wrapper ul to target box space infront of the li items */
+
+.content-wrapper ul {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.menu-list li {
+    color: #45610E;
+    line-height: 36px;
+    /* moved from parent .menu-list */
+    list-style: none;
+    padding-left: 0;
+}
+
+
+/******** FOOTER STYLES ********/
+
+footer {
+    text-align: center;
+    margin-top: 8px;
+}
+
+footer span {
+    font-family: "Galada", cursive;
+    color: #45610E;
+    font-size: 14px;
+}
